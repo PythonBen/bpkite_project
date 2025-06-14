@@ -8,6 +8,7 @@
 \usepackage{geometry}
 \usepackage{appendix}
 \usepackage{placeins}
+\usepackage{pdfpages}
 %\documentclass[10pt]{\documentclass[10pt]{\documentclass[10pt]{\documentclass[10pt]{\documentclass[10pt]{•}}}}}\usepackage{biblatex}
 \geometry{margin=2.5cm}
 
@@ -17,18 +18,30 @@
 \title{Initiation kitesurf pour du personnel de l'UCPA}
 \maketitle
 \chapter*{Remerciements}
-Je remercie l'UCPA de m'avoir permis de suivre la formation BPJEPS glisse
-aérotractéesau sein de la structure ucpa d'Hourtin et d'avoir mis
-à ma disposition les moyens pour réaliser mon projet.
+Je remercie l'UCPA de m'avoir permis de suivre la formation
+BPJEPS glisse aérotractées au sein de la structure Ucpa 
+d'Hourtin, en particulier Cyrille Pan Wan Sam et d'avoir
+mis à ma disposition les moyens pour réaliser mon projet.
 
-Je remercie particulièrement Lucie Poudevigne pour m'avoir conseillé et
-aidé dans mon projet.
+Je remercie particulièrement Lucie Poudevigne pour m'avoir
+conseillé et aidé dans mon projet.
 
-Je remercie Loic Soufflet et l'équipe des formateurs de l'ENVS pour 
-m'avoir formé dans les techniques d'enseignement du kitesurf.
+Je remercie Loic Soufflet et l'équipe des formateurs de 
+l'ENVS pour m'avoir formé dans les techniques d'enseignement
+du kitesurf.
 
-Je remercie aussi tous mes collègues en formation et mes collègues 
-de travail qui ont rendu cette année très agréable et formatrice.
+Je remercie mes compagnons de formation de cette promo 2025,
+c'est à dire Etienne, Félix, Léo, Margaux, Marion, Matis, Pattou,
+Simon, Stan qui ont rendu cette année très agréable,
+avec une très bonne ambiance et entraide entre nous.
+Et bien s\^ur Sylvain, mon collègue de formation et 
+de structure à Hourtin.
+
+Je remercie également les moniteurs d'Hourtin  pour la
+bonne ambiance et le cadre de travail agréable.
+
+Je remercie aussi Romain Frabretti, mon tuteur pour
+partager son expérience et tous ses bons conseils.
 
 Enfin, je tiens à remercier mes parents et ma fratrie.
 
@@ -38,15 +51,19 @@ Enfin, je tiens à remercier mes parents et ma fratrie.
 \newpage
 \section{Introduction}
 J'ai eu la chance d'avoir une famille unie et je n'ai manqué de rien
-J'ai pu faire des études et  travaillé dans le domaine
+J'ai pu faire des études et  travailler dans le domaine
 scientifique et technique. J'ai pu  faire quelques 
-saisons de moniteur voile et planche à voile pendant des périodes 
-de transition.
+saisons de moniteur voile et de planche à voile entre deux contrat 
+de travail.
 En 2023, après avoir terminé un projet
-en CDD, j'ai refait une saison et commencé à réfléchir au BP kite.
-C'est surtout l'attrait du plein air, de l'enseignement, de la rencontre
-des gens et de l'attrait pour le kitesurf qui m'ont décidé à m'investir
-pour cette formation.
+en CDD dans le domaine informatique, j'ai passé l'IKO kite\cite{iko}
+puis refait une saison en planche à voile et voile à l'UCPA de 
+d'Hyères. C'est la que j'ai commencé à réfléchir au BP kite.
+
+C'est surtout l'attrait du plein air, des beaux endroits,
+ de l'enseignement, de la rencontre
+des gens et un sentiment de liberté avec le   kitesurf qui 
+m'ont décidé à m'investir pour cette formation.
 
 Le kitesurf apparaît dans le grand public fin des années 1990 et
 l'aile à boudin redécollable est inventée par les frères Legaignoux avec 
@@ -66,9 +83,8 @@ Malheureusement, les associations contactés n'ont pas donné suite
 à mes nombreuses sollicitations,
 le 9 mai 2025, j'ai donc pris la décision en accord avec 
 ma tutrice de réorienter mon projet et de m'adresser au personnel de 
-l'UCPA. Ce projet s'est donc transformé en journée de cohésion 
+l'UCPA. Ce projet s'est donc transformé en une séance initiation kitesurf 
 entre personnel de l'UCPA du centre d'Hourtin.
-
 %\subsection{Contexte et situation géographique}
 \section{Présentation de l'UCPA}
 
@@ -111,13 +127,14 @@ d'activités sportives et de plein air à un public plus large.
 l'UCPA a pour objectifs de permettre au plus grand nombre jeunes et adultes
 d'apprendre ou se perfectionner dans un sport. De développer la solidarité,
 l'autonomie à travers l'activité développer la solidarité et l'autonomie
-à travers l'activité et le développement personnel de chacun.
+à travers l'activité et le développement personnel de chacun 
+(voir appendice \ref{ucpa_projet}).
 
 
 %\subsection{Statut juridique}
 
-L'UCPA (Union nationale des Centres sportifs de Plein Air) est une association à but
-non lucratif régie par la loi de 1901. Ce statut juridique signifie qu'elle est une
+L'UCPA (Union nationale des Centres sportifs de Plein Air) est une association
+à but non lucratif régie par la loi de 1901. Ce statut juridique signifie qu'elle est une
 organisation de droit privé, indépendante de l'État, et qu'elle poursuit des 
 objectifs d'intérêt général sans chercher à réaliser des bénéfices pour ses membres.
 
@@ -138,10 +155,12 @@ en difficulté en gironde. Une structure, l'association Aria33 semblait
 intéressée, mais a bloqué sur le financement (voir appendice \ref{appendix_mail})
 
 J'ai continué mes recherches et contacté trois autres structures par mail et
-téléphone. 
+téléphone. Je n'ai pas eu de retour de mes mails et très peu d'échanges 
+au téléphone. 
 Devant le peu d’intérêt pour une séance d'initiation kitesurf
 des associations contactées, j'ai décidé à regret et en accord avec ma tutrice
-de changer de public et de choisir du personnel interne à l'UCPA.
+de changer de public et de choisir du personnel interne à l'UCPA pour organiser
+une séance d'initiation au kitesurf. 
 Ceci à l'avantage de régler la question du financement et prévenir des
 déconvenues de dernières minutes.
 
@@ -164,50 +183,63 @@ Certains effectuent des stages de 2 semaines.
 Il y a rarement du vent le matin, le thermique se lève dans l'après midi.
 Le vent est à dominante Ouest, Nord Ouest avec des thermiques légers les après midi et 
 en soirée. Les statistiques de vent sont indiquées sur la figure \ref{vent_stats}.
-Pour les stagiaires une séance de kite par jour de 3h est organisée à 13h30 et 16h30.
+Pour les stagiaires deux séances de kite par jour de 2h45 sont organisées de 13h30 à 16h15
+et de 16h30 à 18h45.
 Il y a 2 moniteurs kitesurf et 2 stagiaires (Sylvain Lacault) et moi m\^eme.
-Une équipe d'environ d'environ xx moniteurs voiles s'occupent de la voile, planche à voile
-et aussi paddle.
+Une équipe d'environ d'environ 4 moniteurs voiles s'occupent de la voile, 
+planche à voile et aussi paddle.
 
 Pour le matériel, la structure dispose d'ailes à boudin et aussi des ailes 
-hybrides adaptées au vent léger.
+hybrides adaptées au vent léger. En général nous faisons le choix des ailes hybrides 
+lorsque le vent moyen est inférieur à 12 noeuds, au delà nous utilisons
+les ailes à boudins.
+
 Nous nous rendons en bateau au sud du centre, après le port ou il y a 
-une plage (voir carte figure \ref{zones_nav}).
+une plage (voir carte figure \ref{zones_nav}). Le lac d'Hourtin étant très 
+réglementé par la mairie et étant classé zone Natura 2000\cite{natura2000}, 
+il y a qu'une assez grande zone délimitée par des bouées et dédié à la pratique
+du kitesurf.
 Les séances de kitesurf se font principalement en eau peu profonde (~ 1, 1.5m).
-La carte\ref{carte_profondeur} indiquant la profondeur du lac montre que la profondeur sur 
-la moitié du lac dans le sens longitudinal 
-et inférieur à 2 m.
-\begin{itemize}
-\item une séance de kite / jour 13h30-16h30 et 16h30-19h30 (thermique en fin d'ap)
-\item 2 moniteurs kite  et 2 moniteurs stagiaires (Sylvain et benj)
-\item une équipe de moniteurs voile
-\item des animateurs (bafa et aussi staps)
-\item matériel: aile à boudin et hybrides (vent < 13 noeuds)
-\item kitesurf: principalement en epp 
-\item Adrien Forestier et Lucie Poudevigne: co directeur village sportif
-\item Lucie Poudevigne: responsable école de sport
-\item tuteur: Romain Fabretti
-\end{itemize}
+La carte de la figure \ref{carte_profondeur} indiquant la profondeur du lac montre que la 
+profondeur sur la moitié du lac dans le sens longitudinal 
+et inférieur à 2 m. Ceci est du à des raisons géologiques lors de la
+formation des dunes du littoral.
+%\begin{itemize}
+%\item une séance de kite / jour 13h30-16h30 et 16h30-19h30 (thermique en fin d'ap)
+%\item 2 moniteurs kite  et 2 moniteurs stagiaires (Sylvain et benj)
+%\item une équipe de moniteurs voile
+%\item des animateurs (bafa et aussi staps)
+%\item matériel: aile à boudin et hybrides (vent < 13 noeuds)
+%\item kitesurf: principalement en epp 
+%\item Adrien Forestier et Lucie Poudevigne: co directeur village sportif
+%\item Lucie Poudevigne: responsable école de sport
+%\item tuteur: Romain Fabretti
+%\end{itemize}
 
 \subsection{Caractéristiques du lac d'Hourtin}
 \begin{figure}
+\includegraphics[width=\linewidth]{Images/statistics_vent_hourtin.png} 
+\caption{Vent dominant NO, O, assez léger (8-12n), 
+souvent thermique en fin d'après midi.\label{vent_stats}}
+
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=5cm]{Images/profondeur_hourtin.png} 
+\caption{Profondeur du lac d'Hourtin\label{carte_profondeur}}
+\end{figure}
+
+\begin{figure}
 \includegraphics[width=7cm]{zones_kite_voile.jpg} 
-\caption{Zones de navigation\label{zones_nav}}
+\caption{Zones de navigation, au sud et limité par des bouées jaunes, la zone kite\label{zones_nav}}
 \end{figure}
 %\begin{figure}
 %\includegraphics[width=8cm]{zone_natura_2000.jpg} 
 %\caption{Zone natura 2000\ref{zone_natura}}
 %\end{figure}
-\begin{figure}
-\includegraphics[width=5cm]{Images/profondeur_hourtin.png} 
-\caption{Profondeur du lac d'Hourtin\label{carte_profondeur}}
-\end{figure}
-au sud, zone de kite, moitié du lac $ < 2m$. Enseignement principalement en epp.
-\begin{figure}
-\includegraphics[width=\linewidth]{Images/statistics_vent_hourtin.png} 
-\caption{Vents\label{vent_stats}}
-vent dominant NO, O, assez léger (8-12n),  souvent thermique en fin d'après midi.
-\end{figure}
+
+%au sud, zone de kite, moitié du lac $ < 2m$. Enseignement principalement en epp.
+
 \subsection{Zone de naviguation}
 \begin{figure}
 \begin{minipage}{0.4\textwidth}
@@ -220,15 +252,15 @@ vent dominant NO, O, assez léger (8-12n),  souvent thermique en fin d'après mi
 \caption{Délimitation par des bouées}
 \end{minipage}
 \end{figure}
-La zone de naviguation est délimitée par des bouées jaunes.
+La zone de navigation est délimitée par des bouées jaunes.
 Sur une grande partie de cette zone, la profondeur varie de 0.5 à 2 m.
 Les stagiaires ont donc pied sur presque toute la zone.
 \section{Projet}
 \subsection{Diagnostic}
-Il y a 3 centres nautiques UCPA dans la région d'Hourtin: Bombannes qui est
-un centre adulte, Hourtin et Montalivet qui sont deux centres à destinations des jeunes.
-Au final, il y a environ 40 ? moniteurs dans les disciplines de la voile, kayak et
-activités terrestres. Tous ces moniteurs ne se fréquentent pas quotidiennement.
+%Il y a 3 centres nautiques UCPA dans la région d'Hourtin: Bombannes qui est
+%un centre adulte, Hourtin et Montalivet qui sont deux centres à destinations des jeunes.
+%Au final, il y a environ 40 ? moniteurs dans les disciplines de la voile, kayak et
+%activités terrestres. Tous ces moniteurs ne se fréquentent pas quotidiennement.
 
 L'Ucpa propose des journées d'intégration dans certains centre, mais
 une initiation kitesurf est rarement proposée. Les raisons sont notamment
@@ -253,6 +285,10 @@ et de sécurité avec un risque de blessures.
 \subsection{Budget prévisionnel}
 Je suis en contrat pro avec l'UCPA. Le salaire net est de 1396 euros pour 152 heures, 
 ce qui fait un salaire horaire net de 9.2 euros.
+Il y a Romain notre formateur en surveillance sur un bateau, Sylvain et moi.
+Nous comptons une séance de 2h. Le total due aux moniteurs kite est donc de
+%2*(9.2+9.2+12) = 40 euros
+% to be complete and more detail
 \subsection{Proposition}
 L'idée d'organiser plusieurs séances de  kitesurf à destination des moniteurs
 de ces trois centres permet  de créer des contacts 
@@ -273,7 +309,7 @@ Le planning des étapes importantes de mon projet est indiqué
 
 \begin{figure}
 \centering
-\includegraphics[width=8cm]{planningBL.png} 
+\includegraphics[width=12cm]{planningBL.png} 
 \caption{Tableau de planification du projet \label{gantt}}
 \end{figure}
 \subsection{Météo du jour, 22/06/25}
@@ -324,6 +360,10 @@ Ewan: bon pilotage  (11m2)
 \caption{Une stagiaire concentrée sur le pilotage}
 \end{minipage}
 \end{figure}
+Le public que j'ai eu pour ma première séance est donc assez sportif
+et ils ont tous apprécié la séance. Ils se sont sentis en sécurité
+et voudraient bien continuer à progresser si l'opportunité se présentait.
+Les réponses de chaque stagiaires sont consignées dans le tableau \ref{questionnaire}.
 \subsection{Séance 2}
 
 le 23/05/2025, 
@@ -336,15 +376,15 @@ laureleen: pilotage, nage tractée, (9 m2)
 \subsection{Bilan des séances}
 Le retour des stagiaires, selon le questionnaire de l'annexe \ref{questionnaire}.
 \begin{table}
-\begin{tabular}{|c|c|c}
+\begin{tabular}{|p{6cm}|p{1.6cm}|p{7cm}|}
         \hline
-        \textbf{\small{Questions}}                & \textbf{\small{Stagiaire}} & \textbf{\small{Réponse}}   \\ 
+        \textbf{\small{Questions}}           & \textbf{\small{Stagiaire}} & \textbf{\small{Réponse}}   \\ 
         \hline
-  \small{As tu aimé l'activité kitesurf ?}  &  Ewan   & \small{Oui c'était super !}   \\
+  As tu aimé l'activité kitesurf ?           & Ewan                       & Oui c'était super !   \\
         \hline
-        \shortstack{Te sentais tu en sécurité ? \\
-        / as tu eu peur à un moment ?}     &         & \shortstack{Non pas du tout, les consignes de sécurité \\
-        ont été bien expliquées, donc je me suis senti \\ en total sécurité} \\
+        Te sentais tu en sécurité ? \\
+        / as tu eu peur à un moment ?    &     & \shortstack{Non pas du tout, les consignes de  \\
+                                         sécurité ont été bien expliquées, donc\\je me suis senti en total sécurité} \\
         \hline
         As tu compris des choses sur le kitesurf ? & &  \shortstack{Le pilotage et la nage tracté sont  \\    
                                                                     venus assez rapidement mais \\
@@ -353,10 +393,12 @@ Le retour des stagiaires, selon le questionnaire de l'annexe \ref{questionnaire}
                                                                vraiment assimiler et maitriser \\
                                                                  le tout à 100\%}\\
         \hline
-        \shortstack{Aimerais tu continuer cette activité\\ 
-         si tu en as la possibilité ?}          & &oui ! \\
+\shortstack{Aimerais tu continuer cette \\ 
+         activité si tu en as la  \\
+                                     possibilité ?}          & &oui ! \\
          \hline
-      As des points positifs ou négatifs a mentionner ? & & \shortstack{En terme pédagogique je pense \\
+\shortstack{As des points positifs ou \\
+ négatifs  à mentionner ?}                                 & & \shortstack{En terme pédagogique je pense \\
                                                                         qu'il pourrait \^etre bien d'utiliser \\
                                                                         des images ou métaphores pour aider à \\
                                                                         mieux comprendre les différentes \\
@@ -370,9 +412,35 @@ Le retour des stagiaires, selon le questionnaire de l'annexe \ref{questionnaire}
                                                                         beaucoup !}\\
           \hline
           D'autres commentaires ?                       &  &     \\
-          \hline                                                                        
+          \hline                              
+       As tu aimé l'activité kitesurf ?      & Antony     & \shortstack{Oui, j'ai beaucoup aimé les sensations\\    du vent  dans la voile et du début de \\ pilotage que nous avons eu dans la voile \\et du début de pilotage que nous \\ avons pu réaliser}\\                                        
+       \hline
+      Te sentais tu en sécurité ? \\
+        / as tu eu peur à un moment ?    &     & \shortstack{Je n'ai pas eu peur et je me suis  \\
+                                         senti en sécurité gr\^ace aux conseils\\
+                                         et à l'aspect ludique donnée à la séance \\
+                                         notamment avec la nage tractée} \\
+        \hline  
+        As tu compris des choses sur le kitesurf ? & &  \shortstack{J'ai bien compris les premières notions  \\    
+                                                                    de pilotage et la logique} \\
+        \hline
+        \shortstack{Aimerais tu continuer cette \\ 
+         activité si tu en as la  \\
+                                     possibilité ?}          & & \shortstack{Oui, j'espère avoir la possibilité\\\ d'en refaire afin de pouvoir \\progresser dans l'activité} \\
+      \hline
+      \shortstack{As des points positifs ou \\
+ négatifs  à mentionner ?}                                 & & \shortstack{Peut \^etre aborder les termes \\
+                                                                        techniques un peu plus tard ou après \\
+                                                                        une définition des termes car j'étais \\
+                                                                        un peu perdu. \\
+                                                                        L'aspect ludique de la séance et le \\
+                                                                        fait que l'on soit en bin\^ome}  \\
+      \hline
+          D'autres commentaires ?                       &  &  RAS   \\
+      \hline
+                                                                        
 \end{tabular}
-\caption{Réponses des stagiaires à mon questionnaire}
+\caption{Réponses des stagiaires à mon questionnaire\label{questionnaire}}
 \end{table}
 
 
@@ -382,11 +450,16 @@ Pendant ma saison à l'UCPA d'Hourtin, j'ai apprécié proposer quelques
 séances d'initiation kitesurf à destination du personnel UCPA.
 Les bénéfices ont été:
 \begin{itemize}
-\item mieux se connaitre en faisant une activité plaisante
+\item mieux se connaître en faisant une activité plaisante
 \item faire progresser des collègues
 \item leur faire prendre conscience  des problématiques liées au kitesurf
 \end{itemize}
 
+Mes séances se sont bien déroulées en sécurité et en optimisant 
+le temps de pratique. Les stagiaires ont été très satisfait de la 
+séance et la plupart voudraient continuer l'activité si ils en 
+ont la possibilité. 
+Au final cette initiation kitesurf s'est révélée un succès.
 Il reste un regret, celui de ne pas pu avoir réaliser mon idée initiale, 
 à destination d'un public différent. Je pense que la mise en place de séances
 pour un tel public sera plus facile dans une structure privée et avec des
@@ -437,7 +510,7 @@ contacts direct dans les associations en question.
 \item As tu compris des choses sur le kitesurf ?
 %\item Au total était tu content de ton stage ?
 \item Aimerais tu continuer cette activité si tu en as la possibilité.
-\item Sur une échelle de 1 à 5 (5 la meilleure note), qu'elle note donnerait tu à ce stage ?
+%\item Sur une échelle de 1 à 5 (5 la meilleure note), qu'elle note donnerait tu à ce stage ?
 \item As des points positifs ou négatifs a mentionner ?
 \item D'autres commentaires ?
 
@@ -524,7 +597,7 @@ Benjamin Lepers
 \end{itemize}
 \section{Communication}
 \begin{itemize}
-\item signes: aile au zenith, aile en parking à droite ou gauche, lacher la barre
+\item signes: aile au zénith, aile en parking à droite ou gauche, lacher la barre
 \item sifflement: on se replace dans la zone
 \end{itemize}
 \section{déroulé de la séance}
@@ -535,6 +608,9 @@ Ensuite, l'aile est passée à tour de role pour un premier pilotage.
 Lorsque, le redécollage est maitrisé et les consignes réspectées, 
 on gonfle une 2ème aile, il y a maintenant 3 personnes par kite.
 Si ca tourne bien en sécurité, on gonfle un 3ème kite et on a 3 binome par aile.
+
+\chapter{Projet UCPA\label{ucpa_projet}}
+\includepdf[angle=90]{projet_ucpa2025.pdf}
 \bibliographystyle{plain}
 \bibliography{biblio}
 \end{document}
